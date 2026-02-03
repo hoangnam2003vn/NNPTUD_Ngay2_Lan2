@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+
+    .deleted {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    input {
+      padding: 8px;
+      width: 260px;
+    }
+
+    button {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Danh sách Posts</h2>
+
+  <!-- TẠO POST MỚI (ID BỎ TRỐNG) -->
+  <div class="row">
+    <input id="titleInput" placeholder="Nhập title..." />
+    <button id="btnAdd">Thêm post</button>
+  </div>
+
+  <ul id="postList"></ul>
+
+  <script src="./main.js"></script>
+</body>
+</html>
